@@ -1,0 +1,29 @@
+{
+  "name": "sassdesk",
+  "version": "1.0.0",
+  "description": "Set of SCSS files that help you have a faster UI development.",
+  "main": "main.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sciodesk/SassDesk.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "styles",
+    "web",
+    "frontend",
+    "ui",
+    "library"
+  ],
+  "author": "Leonardo Legaspi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sciodesk/SassDesk/issues"
+  },
+  "homepage": "https://github.com/Sciodesk/SassDesk#readme"
+}

@@ -2,13 +2,6 @@
 //The value in these variables are the values that each
 //device has as a minimum width, meaning is the minimum 
 //size a device can take.
-
-@mixin mobile {
-    @media only screen and (min-width: $mobile) {
-      @content;
-    }
-}
-
 @mixin tablet {
     @media only screen and (min-width: $tablet) {
       @content;
@@ -16,7 +9,7 @@
 }
 
 @mixin touch {
-  @media only screen and (min-width: 200px) and (min-width: $desktop){
+  @media only screen and (max-width: $desktop){
     @content;
   }
 }
