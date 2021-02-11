@@ -1,0 +1,40 @@
+//Colors
+$scheme-main:  #f0f0f0 !default;
+$scheme-invert:#1165ED !default;
+
+$black-primary:#212120 !default;
+$white:        hsl(0, 0%, 100%) !default;
+
+$grey-darker:  hsl(0, 0%, 21%) !default;
+$grey-dark:    hsl(0, 0%, 29%) !default;
+$grey:         hsl(0, 0%, 31%) !default;
+$grey-light:   hsl(0, 0%, 50%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+$grey-lightest:hsl(0, 0%, 93%) !default;
+
+$succes:       #4bb543;
+$fail:         #e50000;
+
+//Responsive Sizes
+$breakpoint-offset: 40px;
+$tablet: 680px !default;
+$desktop: 1007px + (2 * $breakpoint-offset) !default;
+$widescreen: 1300px + (2 * $breakpoint-offset) !default;
+$full-hd: 1408px + (2 * $breakpoint-offset) !default;
+
+//Typography
+$font-family-primary: Arial, sans-serif !default;
+$font-family-secondary: Tahoma, serif !default;
+
+$font-size-primary: 18px !default;
+$font-size-primary-medium: 15px !default;
+$font-size-primary-small: 13px !default;
+
+$font-size-jumbo: 5rem !default; //90px
+$font-size-display: 3.33rem !default; //60px
+$font-size-header: 2.22rem !default; //40px
+$font-size-title: 1.66rem !default; //29.88px
+$font-size-subtitle: 1.33rem !default; //23.94px
+$font-size-body: 1rem !default; //18px
+$font-size-note: 0.77rem !default; //13.86px
+$font-size-caption: 0.66rem !default; //11.88px
