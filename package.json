@@ -1,6 +1,6 @@
 {
   "name": "sassdesk",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Set of SCSS files that help you have a faster UI development.",
   "main": "main.scss",
   "scripts": {
