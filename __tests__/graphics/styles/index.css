@@ -1,0 +1,67 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 13px;
+}
+@media only screen and (min-width: 680px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1087px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.c1 {
+  font-size: 5rem;
+  color: blue;
+}
+@media only screen and (min-width: 680px) {
+  .c1 {
+    color: blueviolet;
+  }
+}
+@media only screen and (min-width: 1087px) {
+  .c1 {
+    color: black;
+  }
+}
+
+.c2 {
+  font-size: 3.33rem;
+}
+
+.c3 {
+  font-size: 2.22rem;
+}
+
+.c4 {
+  font-size: 1.66rem;
+}
+
+.c5 {
+  font-size: 1.33rem;
+}
+
+.c6 {
+  font-size: 1rem;
+}
+
+.c7 {
+  font-size: 0.77rem;
+}
+
+.c8 {
+  font-size: 0.66rem;
+}
+
+/*# sourceMappingURL=index.css.map */

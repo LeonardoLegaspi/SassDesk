@@ -4,7 +4,7 @@
   "description": "Set of SCSS files that help you have a faster UI development.",
   "main": "main.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "sass prueba.scss:__tests__/graphics/styles/index.css && jest"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/Sciodesk/SassDesk/issues"
   },
-  "homepage": "https://github.com/Sciodesk/SassDesk#readme"
+  "homepage": "https://github.com/Sciodesk/SassDesk#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {}
 }
