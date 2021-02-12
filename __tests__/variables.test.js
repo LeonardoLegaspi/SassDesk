@@ -13,17 +13,3 @@ describe('-----VARIABLES TEST', ()=>{
         expect(result.css.toString()).toMatchSnapshot();
       });
 })
-
-describe('-----GENERICS TEST', ()=>{
-  test('Generics snapshot', async () => {
-
-      var result = sass.renderSync({
-        data: `
-        @import './2_base/generics';
-        `,
-        outputStyle: 'nested'
-      });
-      
-      expect(result.css.toString()).toMatchSnapshot();
-    });
-})

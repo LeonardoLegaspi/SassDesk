@@ -1,8 +1,42 @@
-body {
+a, body {
   margin: 0px;
   padding: 0px;
 }
 
+/**
+* Calculate the luminance for a color.
+* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+*/
+/**
+ * Calculate the contrast ratio between two colors.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Determine whether to use dark or light text on top of given color.
+ * Returns black for dark text and white for light text.
+ */
+a, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/**
+* Calculate the luminance for a color.
+* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+*/
+/**
+ * Calculate the contrast ratio between two colors.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Determine whether to use dark or light text on top of given color.
+ * Returns black for dark text and white for light text.
+ */
 html {
   font-size: 13px;
 }
@@ -21,6 +55,111 @@ body {
   font-family: Arial, sans-serif;
 }
 
+a {
+  color: gray;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: #212120;
+}
+
+body, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+/**
+* Calculate the luminance for a color.
+* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+*/
+/**
+ * Calculate the contrast ratio between two colors.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Determine whether to use dark or light text on top of given color.
+ * Returns black for dark text and white for light text.
+ */
+.button {
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+  background: white;
+  color: #212120;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+.button.scheme {
+  border: 1px solid #1165ED;
+  background: #1165ED;
+  color: white;
+}
+.button.scheme {
+  border: 1px solid #1165ED;
+  color: white;
+  background-color: #1165ED;
+}
+.button.scheme:hover {
+  border-color: #0e51bd;
+  background: #0e51bd;
+}
+.button.scheme:hover.isEmpty {
+  background: white;
+  color: #1165ED;
+}
+.button.success {
+  border: 1px solid #46a93e;
+  color: white;
+  background-color: #46a93e;
+}
+.button.success:hover {
+  border-color: #378430;
+  background: #378430;
+}
+.button.success:hover.isEmpty {
+  background: white;
+  color: #46a93e;
+}
+.button.fail {
+  border: 1px solid #e50000;
+  color: white;
+  background-color: #e50000;
+}
+.button.fail:hover {
+  border-color: #b20000;
+  background: #b20000;
+}
+.button.fail:hover.isEmpty {
+  background: white;
+  color: #e50000;
+}
+.button:hover {
+  border-color: #4f4f4f;
+}
+
+body, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+/**
+* Calculate the luminance for a color.
+* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+*/
+/**
+ * Calculate the contrast ratio between two colors.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+ * Determine whether to use dark or light text on top of given color.
+ * Returns black for dark text and white for light text.
+ */
 .c1 {
   font-size: 5rem;
   color: blue;
@@ -34,6 +173,11 @@ body {
   .c1 {
     color: black;
   }
+}
+
+.spacer {
+  height: 30px;
+  width: 100vw;
 }
 
 .c2 {

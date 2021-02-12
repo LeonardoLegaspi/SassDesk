@@ -1,0 +1,16 @@
+@import './external';
+  /**
+   * Determine whether to use dark or light text on top of given color.
+   * Returns black for dark text and white for light text.
+   */
+@function choose-contrast-color($color) {
+    $lightContrast: contrast($color, white);
+    $darkContrast: contrast($color, black);
+
+    @if ($lightContrast > $darkContrast) {
+        @return white;
+    }
+    @else {
+        @return black;
+    }
+}

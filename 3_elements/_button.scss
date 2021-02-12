@@ -1,0 +1,40 @@
+@import '../1_helpers/secondary_variables';
+@import '../1_helpers/mixins';
+
+$button-color: $black !default;
+$button-background: $white !default;
+$button-font-size: $font-size-body !default;
+$button-padding-vertical: 10px !default;
+$button-padding-horizontal: 15px !default;
+
+$button-names: $color-pairs !default;
+
+.button{
+    @include default-bordering;
+    cursor: pointer;
+    background: $button-background;
+    color: $button-color;
+    border-radius: $border-radius;
+    font-size: $button-font-size;
+    padding: $button-padding-vertical $button-padding-horizontal;
+    @each $name, $two-colors in $button-names{
+        $background: nth($two-colors, 1);
+        $color: nth($two-colors, 2);
+        &.#{$name}{
+            @include default-bordering($background);
+            color: $color;
+            background-color: $background;
+            &:hover{
+                $hover-color: darken($background, 10%);
+                border-color: $hover-color;
+                background: $hover-color;
+                &.isEmpty{
+                    @include isEmpty($background)
+                }
+            }
+        }
+    }
+    &:hover{
+        border-color: $border-color-hover;
+    }
+}

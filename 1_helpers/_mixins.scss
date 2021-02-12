@@ -1,4 +1,21 @@
-@import '../1_helpers/variables';
+@import './secondary_variables';
+@import './functions';
+//Colors
+//----->Buttons
+@mixin backgroundNcontrast($background){
+  background: $background;
+  color: choose-contrast-color($background);
+}
+@mixin isEmpty($color){
+  background: $white;
+  color: $color
+}
+
+//Border
+@mixin default-bordering($color: $border-color){
+  border: $border-width solid $color;
+}
+
 //Responsiveness
 //The value in these variables are the values that each
 //device has as a minimum width, meaning is the minimum 

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-----BUTTON TEST Buttons snapshot 1`] = `
+"/**
+ * Calculate the luminance for a color.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+   * Calculate the contrast ratio between two colors.
+   * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+   */
+/**
+   * Determine whether to use dark or light text on top of given color.
+   * Returns black for dark text and white for light text.
+   */
+.button {
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+  background: white;
+  color: #212120;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 10px 15px; }
+  .button.scheme {
+    border: 1px solid #1165ED;
+    background: #1165ED;
+    color: white; }
+  .button.scheme {
+    border: 1px solid #1165ED;
+    color: white;
+    background-color: #1165ED; }
+    .button.scheme:hover {
+      border-color: #0e51bd;
+      background: #0e51bd; }
+  .button.success {
+    border: 1px solid #46a93e;
+    color: white;
+    background-color: #46a93e; }
+    .button.success:hover {
+      border-color: #378430;
+      background: #378430; }
+  .button.fail {
+    border: 1px solid #e50000;
+    color: white;
+    background-color: #e50000; }
+    .button.fail:hover {
+      border-color: #b20000;
+      background: #b20000; }
+  .button:hover {
+    border-color: #4f4f4f; }
+"
+`;

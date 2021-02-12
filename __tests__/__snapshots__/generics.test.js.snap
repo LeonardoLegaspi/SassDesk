@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-----GENERICS TEST Generics snapshot 1`] = `
+"body, a {
+  margin: 0px;
+  padding: 0px; }
+
+/**
+ * Calculate the luminance for a color.
+ * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+ */
+/**
+   * Calculate the contrast ratio between two colors.
+   * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+   */
+/**
+   * Determine whether to use dark or light text on top of given color.
+   * Returns black for dark text and white for light text.
+   */
+html {
+  font-size: 13px; }
+  @media only screen and (min-width: 680px) {
+    html {
+      font-size: 15px; } }
+  @media only screen and (min-width: 1087px) {
+    html {
+      font-size: 18px; } }
+
+body {
+  font-family: Arial, sans-serif; }
+
+a {
+  color: gray;
+  cursor: pointer;
+  text-decoration: none; }
+  a:hover {
+    color: #212120; }
+"
+`;

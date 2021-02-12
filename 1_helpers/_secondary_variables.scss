@@ -1,1 +1,22 @@
 @import '../1_helpers/variables';
+
+$font-body: $font-family-primary !default;
+$font-highlight: $font-family-secondary !default;
+
+//Colors
+$link-color: $grey-light !default;
+$link-color-hover: $black !default;
+
+$color-pairs: ( "scheme": ($scheme-invert, $white), "success": ($success, $white),"fail": ($fail, $white)) !default;
+
+//Graphics
+$border-radius: 3px !default;
+$border-width: 1px !default;
+$border-color: $grey-lighter !default;
+$border-color-hover: $grey !default;
+
+//Placeholders
+%reset{
+    margin: 0px;
+    padding: 0px;
+}
