@@ -1,42 +1,24 @@
-a, body {
+body {
   margin: 0px;
   padding: 0px;
 }
 
-/**
-* Calculate the luminance for a color.
-* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
 */
-/**
- * Calculate the contrast ratio between two colors.
- * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- */
-/**
- * Determine whether to use dark or light text on top of given color.
- * Returns black for dark text and white for light text.
- */
-a, body {
+body {
   margin: 0px;
   padding: 0px;
 }
 
-a, body {
+body {
   margin: 0px;
   padding: 0px;
 }
 
-/**
-* Calculate the luminance for a color.
-* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
 */
-/**
- * Calculate the contrast ratio between two colors.
- * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- */
-/**
- * Determine whether to use dark or light text on top of given color.
- * Returns black for dark text and white for light text.
- */
 html {
   font-size: 13px;
 }
@@ -55,111 +37,575 @@ body {
   font-family: Arial, sans-serif;
 }
 
-a {
-  color: gray;
-  cursor: pointer;
-  text-decoration: none;
-}
-a:hover {
-  color: #212120;
-}
-
-body, a {
+body {
   margin: 0px;
   padding: 0px;
 }
 
-body, a {
-  margin: 0px;
-  padding: 0px;
-}
-
-/**
-* Calculate the luminance for a color.
-* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
 */
-/**
- * Calculate the contrast ratio between two colors.
- * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- */
-/**
- * Determine whether to use dark or light text on top of given color.
- * Returns black for dark text and white for light text.
- */
-.button {
-  border: 1px solid #dbdbdb;
+.button, .filling-button button, .filling-button button.tertiary-type, .button.tertiary-type {
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  display: inline-flex;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
+*/
+/*
+Desktop =  12 cols
+Tablet = 10 cols
+Mobile = 8 cols
+*/
+.grid {
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 0;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+@media only screen and (min-width: 680px) {
+  .grid {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+@media only screen and (min-width: 1087px) {
+  .grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+.col-sm-1 {
+  grid-column: span 1;
+}
+
+.col-sm-2 {
+  grid-column: span 2;
+}
+
+.col-sm-3 {
+  grid-column: span 3;
+}
+
+.col-sm-4 {
+  grid-column: span 4;
+}
+
+.col-sm-5 {
+  grid-column: span 5;
+}
+
+.col-sm-6 {
+  grid-column: span 6;
+}
+
+.col-sm-7 {
+  grid-column: span 7;
+}
+
+.col-sm-8 {
+  grid-column: span 8;
+}
+
+.col-md-8 {
+  grid-column: span 8;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-md-9 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 8;
+}
+
+.col-md-10 {
+  grid-column: span 8;
+}
+
+.col-10 {
+  grid-column: span 8;
+}
+
+.col-md-11 {
+  grid-column: span 8;
+}
+
+.col-11 {
+  grid-column: span 8;
+}
+
+.col-md-12 {
+  grid-column: span 8;
+}
+
+.col-12 {
+  grid-column: span 8;
+}
+
+@media only screen and (min-width: 680px) {
+  .col-md-1 {
+    grid-column: span 1;
+  }
+
+  .col-md-2 {
+    grid-column: span 2;
+  }
+
+  .col-md-3 {
+    grid-column: span 3;
+  }
+
+  .col-md-4 {
+    grid-column: span 4;
+  }
+
+  .col-md-5 {
+    grid-column: span 5;
+  }
+
+  .col-md-6 {
+    grid-column: span 6;
+  }
+
+  .col-md-7 {
+    grid-column: span 7;
+  }
+
+  .col-md-8 {
+    grid-column: span 8;
+  }
+
+  .col-md-9 {
+    grid-column: span 9;
+  }
+
+  .col-md-10 {
+    grid-column: span 10;
+  }
+
+  .col-10 {
+    grid-column: span 10;
+  }
+
+  .col-11 {
+    grid-column: span 10;
+  }
+
+  .col-12 {
+    grid-column: span 10;
+  }
+}
+@media only screen and (min-width: 1087px) {
+  .col-1 {
+    grid-column: span 1;
+  }
+
+  .col-2 {
+    grid-column: span 2;
+  }
+
+  .col-3 {
+    grid-column: span 3;
+  }
+
+  .col-4 {
+    grid-column: span 4;
+  }
+
+  .col-5 {
+    grid-column: span 5;
+  }
+
+  .col-6 {
+    grid-column: span 6;
+  }
+
+  .col-7 {
+    grid-column: span 7;
+  }
+
+  .col-8 {
+    grid-column: span 8;
+  }
+
+  .col-9 {
+    grid-column: span 9;
+  }
+
+  .col-10 {
+    grid-column: span 10;
+  }
+
+  .col-11 {
+    grid-column: span 11;
+  }
+
+  .col-12 {
+    grid-column: span 12;
+  }
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
+*/
+.button, .filling-button button, .filling-button button.tertiary-type, .button.tertiary-type {
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  display: inline-flex;
+}
+
+.button, .filling-button button, .filling-button button.tertiary-type, .button.tertiary-type {
   cursor: pointer;
-  background: white;
+  background: transparent;
   color: #212120;
-  border-radius: 3px;
   font-size: 1rem;
-  padding: 10px 15px;
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  transition: 300ms all;
 }
-.button.scheme {
-  border: 1px solid #1165ED;
-  background: #1165ED;
-  color: white;
-}
-.button.scheme {
-  border: 1px solid #1165ED;
-  color: white;
+.button.scheme, .filling-button button.scheme {
+  border: 2px solid #1165ED;
+  border-radius: 5px;
   background-color: #1165ED;
+  color: #fff;
 }
-.button.scheme:hover {
+.button.scheme:hover:not(.inverted), .filling-button button.scheme:hover:not(.inverted) {
   border-color: #0e51bd;
   background: #0e51bd;
 }
-.button.scheme:hover.isEmpty {
-  background: white;
+.button.scheme:hover:not(.inverted).empty, .filling-button button.scheme:hover:not(.inverted).empty {
+  background: #fff;
   color: #1165ED;
 }
-.button.success {
-  border: 1px solid #46a93e;
-  color: white;
-  background-color: #46a93e;
+.button.scheme-inverted, .filling-button button.scheme-inverted {
+  border-color: #1165ED;
+  background: #fff;
+  color: #1165ED;
 }
-.button.success:hover {
+.button.scheme-inverted:hover, .filling-button button.scheme-inverted:hover {
+  color: #fff;
+  background: #1165ED;
+  border-color: #1165ED;
+}
+.button.success, .filling-button button.success {
+  border: 2px solid #46a93e;
+  border-radius: 5px;
+  background-color: #46a93e;
+  color: #fff;
+}
+.button.success:hover:not(.inverted), .filling-button button.success:hover:not(.inverted) {
   border-color: #378430;
   background: #378430;
 }
-.button.success:hover.isEmpty {
-  background: white;
+.button.success:hover:not(.inverted).empty, .filling-button button.success:hover:not(.inverted).empty {
+  background: #fff;
   color: #46a93e;
 }
-.button.fail {
-  border: 1px solid #e50000;
-  color: white;
-  background-color: #e50000;
+.button.success-inverted, .filling-button button.success-inverted {
+  border-color: #46a93e;
+  background: #fff;
+  color: #46a93e;
 }
-.button.fail:hover {
-  border-color: #b20000;
-  background: #b20000;
+.button.success-inverted:hover, .filling-button button.success-inverted:hover {
+  color: #fff;
+  background: #46a93e;
+  border-color: #46a93e;
 }
-.button.fail:hover.isEmpty {
-  background: white;
-  color: #e50000;
+.button.fail, .filling-button button.fail {
+  border: 2px solid #d10000;
+  border-radius: 5px;
+  background-color: #d10000;
+  color: #fff;
 }
-.button:hover {
-  border-color: #4f4f4f;
+.button.fail:hover:not(.inverted), .filling-button button.fail:hover:not(.inverted) {
+  border-color: #9e0000;
+  background: #9e0000;
+}
+.button.fail:hover:not(.inverted).empty, .filling-button button.fail:hover:not(.inverted).empty {
+  background: #fff;
+  color: #d10000;
+}
+.button.fail-inverted, .filling-button button.fail-inverted {
+  border-color: #d10000;
+  background: #fff;
+  color: #d10000;
+}
+.button.fail-inverted:hover, .filling-button button.fail-inverted:hover {
+  color: #fff;
+  background: #d10000;
+  border-color: #d10000;
+}
+.button.warning, .filling-button button.warning {
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+  background-color: #f1c40f;
+  color: #212120;
+}
+.button.warning:hover:not(.inverted), .filling-button button.warning:hover:not(.inverted) {
+  border-color: #c29d0b;
+  background: #c29d0b;
+}
+.button.warning:hover:not(.inverted).empty, .filling-button button.warning:hover:not(.inverted).empty {
+  background: #fff;
+  color: #f1c40f;
+}
+.button.warning-inverted, .filling-button button.warning-inverted {
+  border-color: #f1c40f;
+  background: #fff;
+  color: #f1c40f;
+}
+.button.warning-inverted:hover, .filling-button button.warning-inverted:hover {
+  color: #212120;
+  background: #f1c40f;
+  border-color: #f1c40f;
+}
+.button.full-width, .filling-button button.full-width {
+  width: 100%;
+  display: inline-block;
+}
+.button.small, .filling-button button.small {
+  font-size: 0.77rem;
+}
+.button.medium, .filling-button button.medium {
+  font-size: 1.33rem;
+}
+.button.big, .filling-button button.big {
+  font-size: 1.66rem;
+}
+.button.primary-type, .filling-button button.primary-type {
+  border: 2px solid #1165ED;
+  border-radius: 5px;
+  background-color: #1165ED;
+  color: #fff;
+}
+.button.primary-type:hover:not(.inverted), .filling-button button.primary-type:hover:not(.inverted) {
+  border-color: #0e51bd;
+  background: #0e51bd;
+}
+.button.primary-type:hover:not(.inverted).empty, .filling-button button.primary-type:hover:not(.inverted).empty {
+  background: #fff;
+  color: #1165ED;
+}
+.button.secondary-type, .filling-button button.secondary-type {
+  border-color: #bfbfbf;
+  background: #fff;
+  color: #212120;
+}
+.button.secondary-type:hover, .filling-button button.secondary-type:hover {
+  color: #fff;
+  background: #212120;
+  border-color: #212120;
+}
+.button:hover, .filling-button button:hover {
+  border-color: #595959;
 }
 
-body, a {
+body {
   margin: 0px;
   padding: 0px;
 }
 
-/**
-* Calculate the luminance for a color.
-* See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
+/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
 */
-/**
- * Calculate the contrast ratio between two colors.
- * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- */
-/**
- * Determine whether to use dark or light text on top of given color.
- * Returns black for dark text and white for light text.
- */
+.button, .filling-button button, .filling-button button.tertiary-type, .button.tertiary-type {
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  display: inline-flex;
+}
+
+.button, .filling-button button, .filling-button button.tertiary-type, .button.tertiary-type {
+  cursor: pointer;
+  background: transparent;
+  color: #212120;
+  font-size: 1rem;
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  transition: 300ms all;
+}
+.button.scheme, .filling-button button.scheme {
+  border: 2px solid #1165ED;
+  border-radius: 5px;
+  background-color: #1165ED;
+  color: #fff;
+}
+.button.scheme:hover:not(.inverted), .filling-button button.scheme:hover:not(.inverted) {
+  border-color: #0e51bd;
+  background: #0e51bd;
+}
+.button.scheme:hover:not(.inverted).empty, .filling-button button.scheme:hover:not(.inverted).empty {
+  background: #fff;
+  color: #1165ED;
+}
+.button.scheme-inverted, .filling-button button.scheme-inverted {
+  border-color: #1165ED;
+  background: #fff;
+  color: #1165ED;
+}
+.button.scheme-inverted:hover, .filling-button button.scheme-inverted:hover {
+  color: #fff;
+  background: #1165ED;
+  border-color: #1165ED;
+}
+.button.success, .filling-button button.success {
+  border: 2px solid #46a93e;
+  border-radius: 5px;
+  background-color: #46a93e;
+  color: #fff;
+}
+.button.success:hover:not(.inverted), .filling-button button.success:hover:not(.inverted) {
+  border-color: #378430;
+  background: #378430;
+}
+.button.success:hover:not(.inverted).empty, .filling-button button.success:hover:not(.inverted).empty {
+  background: #fff;
+  color: #46a93e;
+}
+.button.success-inverted, .filling-button button.success-inverted {
+  border-color: #46a93e;
+  background: #fff;
+  color: #46a93e;
+}
+.button.success-inverted:hover, .filling-button button.success-inverted:hover {
+  color: #fff;
+  background: #46a93e;
+  border-color: #46a93e;
+}
+.button.fail, .filling-button button.fail {
+  border: 2px solid #d10000;
+  border-radius: 5px;
+  background-color: #d10000;
+  color: #fff;
+}
+.button.fail:hover:not(.inverted), .filling-button button.fail:hover:not(.inverted) {
+  border-color: #9e0000;
+  background: #9e0000;
+}
+.button.fail:hover:not(.inverted).empty, .filling-button button.fail:hover:not(.inverted).empty {
+  background: #fff;
+  color: #d10000;
+}
+.button.fail-inverted, .filling-button button.fail-inverted {
+  border-color: #d10000;
+  background: #fff;
+  color: #d10000;
+}
+.button.fail-inverted:hover, .filling-button button.fail-inverted:hover {
+  color: #fff;
+  background: #d10000;
+  border-color: #d10000;
+}
+.button.warning, .filling-button button.warning {
+  border: 2px solid #f1c40f;
+  border-radius: 5px;
+  background-color: #f1c40f;
+  color: #212120;
+}
+.button.warning:hover:not(.inverted), .filling-button button.warning:hover:not(.inverted) {
+  border-color: #c29d0b;
+  background: #c29d0b;
+}
+.button.warning:hover:not(.inverted).empty, .filling-button button.warning:hover:not(.inverted).empty {
+  background: #fff;
+  color: #f1c40f;
+}
+.button.warning-inverted, .filling-button button.warning-inverted {
+  border-color: #f1c40f;
+  background: #fff;
+  color: #f1c40f;
+}
+.button.warning-inverted:hover, .filling-button button.warning-inverted:hover {
+  color: #212120;
+  background: #f1c40f;
+  border-color: #f1c40f;
+}
+.button.full-width, .filling-button button.full-width {
+  width: 100%;
+  display: inline-block;
+}
+.button.small, .filling-button button.small {
+  font-size: 0.77rem;
+}
+.button.medium, .filling-button button.medium {
+  font-size: 1.33rem;
+}
+.button.big, .filling-button button.big {
+  font-size: 1.66rem;
+}
+.button.primary-type, .filling-button button.primary-type {
+  border: 2px solid #1165ED;
+  border-radius: 5px;
+  background-color: #1165ED;
+  color: #fff;
+}
+.button.primary-type:hover:not(.inverted), .filling-button button.primary-type:hover:not(.inverted) {
+  border-color: #0e51bd;
+  background: #0e51bd;
+}
+.button.primary-type:hover:not(.inverted).empty, .filling-button button.primary-type:hover:not(.inverted).empty {
+  background: #fff;
+  color: #1165ED;
+}
+.button.secondary-type, .filling-button button.secondary-type {
+  border-color: #bfbfbf;
+  background: #fff;
+  color: #212120;
+}
+.button.secondary-type:hover, .filling-button button.secondary-type:hover {
+  color: #fff;
+  background: #212120;
+  border-color: #212120;
+}
+.button:hover, .filling-button button:hover {
+  border-color: #595959;
+}
+
+.filling-button {
+  width: min-content;
+  position: relative;
+  transition: 300ms all;
+}
+.filling-button button {
+  background: transparent;
+  border-radius: 0px;
+  color: inherit;
+}
+.filling-button span {
+  border: none;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 0%;
+  transition: 450ms all;
+}
+.filling-button:hover {
+  color: #fff;
+}
+.filling-button:hover span {
+  left: 0px;
+  width: 100%;
+}
+
 .c1 {
   font-size: 5rem;
   color: blue;
@@ -206,6 +652,17 @@ body, a {
 
 .c8 {
   font-size: 0.66rem;
+}
+
+.grid-try div {
+  height: 100px;
+  width: 100%;
+}
+.grid-try :nth-child(1n) {
+  background: blue;
+}
+.grid-try :nth-child(2n) {
+  background: red;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,52 +1,128 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`-----BUTTON TEST Buttons snapshot 1`] = `
-"/**
- * Calculate the luminance for a color.
- * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
- */
-/**
-   * Calculate the contrast ratio between two colors.
-   * See https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests
-   */
-/**
-   * Determine whether to use dark or light text on top of given color.
-   * Returns black for dark text and white for light text.
-   */
-.button {
-  border: 1px solid #dbdbdb;
+"/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
+*/
+.button, .button.tertiary-type {
+  border: 2px solid #bfbfbf;
+  border-radius: 5px;
+  display: inline-flex; }
+
+.button, .button.tertiary-type {
   cursor: pointer;
-  background: white;
+  background: transparent;
   color: #212120;
-  border-radius: 3px;
   font-size: 1rem;
-  padding: 10px 15px; }
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  transition: 300ms all; }
   .button.scheme {
-    border: 1px solid #1165ED;
-    background: #1165ED;
-    color: white; }
-  .button.scheme {
-    border: 1px solid #1165ED;
-    color: white;
-    background-color: #1165ED; }
-    .button.scheme:hover {
+    border: 2px solid #1165ED;
+    border-radius: 5px;
+    background-color: #1165ED;
+    color: #fff; }
+    .button.scheme:hover:not(.inverted) {
       border-color: #0e51bd;
       background: #0e51bd; }
+      .button.scheme:hover:not(.inverted).empty {
+        background: #fff;
+        color: #1165ED; }
+  .button.scheme-inverted {
+    border-color: #1165ED;
+    background: #fff;
+    color: #1165ED; }
+    .button.scheme-inverted:hover {
+      color: #fff;
+      background: #1165ED;
+      border-color: #1165ED; }
   .button.success {
-    border: 1px solid #46a93e;
-    color: white;
-    background-color: #46a93e; }
-    .button.success:hover {
+    border: 2px solid #46a93e;
+    border-radius: 5px;
+    background-color: #46a93e;
+    color: #fff; }
+    .button.success:hover:not(.inverted) {
       border-color: #378430;
       background: #378430; }
+      .button.success:hover:not(.inverted).empty {
+        background: #fff;
+        color: #46a93e; }
+  .button.success-inverted {
+    border-color: #46a93e;
+    background: #fff;
+    color: #46a93e; }
+    .button.success-inverted:hover {
+      color: #fff;
+      background: #46a93e;
+      border-color: #46a93e; }
   .button.fail {
-    border: 1px solid #e50000;
-    color: white;
-    background-color: #e50000; }
-    .button.fail:hover {
-      border-color: #b20000;
-      background: #b20000; }
+    border: 2px solid #d10000;
+    border-radius: 5px;
+    background-color: #d10000;
+    color: #fff; }
+    .button.fail:hover:not(.inverted) {
+      border-color: #9e0000;
+      background: #9e0000; }
+      .button.fail:hover:not(.inverted).empty {
+        background: #fff;
+        color: #d10000; }
+  .button.fail-inverted {
+    border-color: #d10000;
+    background: #fff;
+    color: #d10000; }
+    .button.fail-inverted:hover {
+      color: #fff;
+      background: #d10000;
+      border-color: #d10000; }
+  .button.warning {
+    border: 2px solid #f1c40f;
+    border-radius: 5px;
+    background-color: #f1c40f;
+    color: #212120; }
+    .button.warning:hover:not(.inverted) {
+      border-color: #c29d0b;
+      background: #c29d0b; }
+      .button.warning:hover:not(.inverted).empty {
+        background: #fff;
+        color: #f1c40f; }
+  .button.warning-inverted {
+    border-color: #f1c40f;
+    background: #fff;
+    color: #f1c40f; }
+    .button.warning-inverted:hover {
+      color: #212120;
+      background: #f1c40f;
+      border-color: #f1c40f; }
+  .button.full-width {
+    width: 100%;
+    display: inline-block; }
+  .button.small {
+    font-size: 0.77rem; }
+  .button.medium {
+    font-size: 1.33rem; }
+  .button.big {
+    font-size: 1.66rem; }
+  .button.primary-type {
+    border: 2px solid #1165ED;
+    border-radius: 5px;
+    background-color: #1165ED;
+    color: #fff; }
+    .button.primary-type:hover:not(.inverted) {
+      border-color: #0e51bd;
+      background: #0e51bd; }
+      .button.primary-type:hover:not(.inverted).empty {
+        background: #fff;
+        color: #1165ED; }
+  .button.secondary-type {
+    border-color: #bfbfbf;
+    background: #fff;
+    color: #212120; }
+    .button.secondary-type:hover {
+      color: #fff;
+      background: #212120;
+      border-color: #212120; }
   .button:hover {
-    border-color: #4f4f4f; }
+    border-color: #595959; }
 "
 `;

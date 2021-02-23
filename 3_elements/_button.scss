@@ -1,39 +1,93 @@
-@import '../1_helpers/secondary_variables';
-@import '../1_helpers/mixins';
-
+@import '../2_base/controls';
+//Colors
 $button-color: $black !default;
-$button-background: $white !default;
+$button-background: transparent !default;
+$primary-type-colors: ($scheme-secondary, $white) !default;
+$secondary-type-colors: ($black, $black, $white, $border-color) !default; //color, background-hover, contrast, border-color
+//Font
 $button-font-size: $font-size-body !default;
+//Sizes
 $button-padding-vertical: 10px !default;
-$button-padding-horizontal: 15px !default;
-
+$button-padding-horizontal: 30px !default;
+//Name, color, contrast Object
 $button-names: $color-pairs !default;
 
+@mixin darkened-button($background, $color) {
+    @include default-bordering($background);
+    background-color: $background;
+    color: $color;
+    &:hover:not(.inverted){
+        $hover-color: darken($background, 10%);
+        border-color: $hover-color;
+        background: $hover-color;
+        &.empty{
+            @include is-empty($background)
+        }
+    }
+}
+
+@mixin inverted-button($color, $background, $contrast, $border_color) {
+    border-color: $border_color;
+    @include is-empty($color);
+    &:hover{
+        color: $contrast;
+        background: $background;
+        border-color: $background;
+    }
+}
+
 .button{
-    @include default-bordering;
+    @extend %control;
     cursor: pointer;
     background: $button-background;
     color: $button-color;
-    border-radius: $border-radius;
     font-size: $button-font-size;
     padding: $button-padding-vertical $button-padding-horizontal;
+    text-align: center;
+    outline: none;
+    transition: $transition-default;
+    //Coloring
     @each $name, $two-colors in $button-names{
         $background: nth($two-colors, 1);
         $color: nth($two-colors, 2);
         &.#{$name}{
-            @include default-bordering($background);
-            color: $color;
-            background-color: $background;
-            &:hover{
-                $hover-color: darken($background, 10%);
-                border-color: $hover-color;
-                background: $hover-color;
-                &.isEmpty{
-                    @include isEmpty($background)
-                }
-            }
+            @include darkened-button($background, $color)
+        }
+        &.#{$name}-inverted{
+            @include inverted-button($background, $background, $color, $background)
         }
     }
+    //Sizing
+    &.full-width{
+        width: 100%;
+        display: inline-block;
+    }
+    &.small{
+        font-size: $font-small;
+    } 
+    &.medium{
+        font-size: $font-medium;
+    }
+    &.big{
+        font-size: $font-big;
+    }
+    //Types
+    &.primary-type{
+        $background: nth($primary-type-colors, 1);
+        $color: nth($primary-type-colors, 2);
+        @include darkened-button($background, $color);
+    }
+    &.secondary-type{
+        $color: nth($secondary-type-colors, 1);
+        $background: nth($secondary-type-colors, 2);
+        $contrast: nth($secondary-type-colors, 3);
+        $border: nth($secondary-type-colors, 4);
+        @include inverted-button($color, $background, $contrast, $border);
+    }
+    &.tertiary-type{
+        @extend .button;
+    }
+    //States
     &:hover{
         border-color: $border-color-hover;
     }

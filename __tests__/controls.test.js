@@ -1,11 +1,11 @@
 var sass = require('node-sass');
 
-describe('-----LINK TEST', ()=>{
-    test('Links snapshot', async () => {
+describe('-----CONTROL TEST', ()=>{
+    test('Control snapshot', async () => {
   
         var result = sass.renderSync({
           data: `
-          @import './3_elements/link';
+          @import './2_base/controls.scss';
           `,
           outputStyle: 'nested'
         });

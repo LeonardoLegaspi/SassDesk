@@ -1,12 +1,10 @@
 @import './secondary_variables';
-@import './functions';
 //Colors
 //----->Buttons
-@mixin backgroundNcontrast($background){
-  background: $background;
-  color: choose-contrast-color($background);
-}
-@mixin isEmpty($color){
+/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
+*/
+@mixin is-empty($color){ 
   background: $white;
   color: $color
 }
@@ -14,6 +12,7 @@
 //Border
 @mixin default-bordering($color: $border-color){
   border: $border-width solid $color;
+  border-radius: $border-radius;
 }
 
 //Responsiveness

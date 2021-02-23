@@ -45,3 +45,16 @@
 .c8{
     font-size: $font-size-caption;  
 }
+
+.grid-try{
+    & div{
+        height: 100px;
+        width: 100%;
+    }
+    :nth-child(1n){
+        background: blue;
+    }
+    :nth-child(2n){
+        background: red;
+    }
+}

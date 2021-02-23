@@ -2,11 +2,9 @@
 
 html{
     font-size: $font-size-primary-small;
-
     @include tablet{
         font-size: $font-size-primary-medium;
     }
-
     @include desktop{
         font-size: $font-size-primary;
     }
@@ -15,15 +13,4 @@ html{
 body{
     @extend %reset;
     font-family: $font-body;
-}
-
-a{
-    @extend %reset;
-    color: $link-color;
-    cursor: pointer;
-    text-decoration: none;
-    
-    &:hover{
-        color: $link-color-hover;
-    }
 }

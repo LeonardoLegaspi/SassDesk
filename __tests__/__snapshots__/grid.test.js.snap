@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`-----GRID TEST Grid snapshot 1`] = `
+"/*
+FIXME Is this useful? or limits to buttons with colors on Variables?
+*/
+/*
+Desktop =  12 cols
+Tablet = 10 cols
+Mobile = 8 cols
+*/
+.grid {
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 0;
+  grid-template-columns: repeat(8, minmax(0, 1fr)); }
+  @media only screen and (min-width: 680px) {
+    .grid {
+      grid-template-columns: repeat(10, minmax(0, 1fr)); } }
+  @media only screen and (min-width: 1087px) {
+    .grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr)); } }
+
+.col-sm-1 {
+  grid-column: span 1; }
+
+.col-sm-2 {
+  grid-column: span 2; }
+
+.col-sm-3 {
+  grid-column: span 3; }
+
+.col-sm-4 {
+  grid-column: span 4; }
+
+.col-sm-5 {
+  grid-column: span 5; }
+
+.col-sm-6 {
+  grid-column: span 6; }
+
+.col-sm-7 {
+  grid-column: span 7; }
+
+.col-sm-8 {
+  grid-column: span 8; }
+
+.col-md-8 {
+  grid-column: span 8; }
+
+.col-8 {
+  grid-column: span 8; }
+
+.col-md-9 {
+  grid-column: span 8; }
+
+.col-9 {
+  grid-column: span 8; }
+
+.col-md-10 {
+  grid-column: span 8; }
+
+.col-10 {
+  grid-column: span 8; }
+
+.col-md-11 {
+  grid-column: span 8; }
+
+.col-11 {
+  grid-column: span 8; }
+
+.col-md-12 {
+  grid-column: span 8; }
+
+.col-12 {
+  grid-column: span 8; }
+
+@media only screen and (min-width: 680px) {
+  .col-md-1 {
+    grid-column: span 1; }
+  .col-md-2 {
+    grid-column: span 2; }
+  .col-md-3 {
+    grid-column: span 3; }
+  .col-md-4 {
+    grid-column: span 4; }
+  .col-md-5 {
+    grid-column: span 5; }
+  .col-md-6 {
+    grid-column: span 6; }
+  .col-md-7 {
+    grid-column: span 7; }
+  .col-md-8 {
+    grid-column: span 8; }
+  .col-md-9 {
+    grid-column: span 9; }
+  .col-md-10 {
+    grid-column: span 10; }
+  .col-10 {
+    grid-column: span 10; }
+  .col-11 {
+    grid-column: span 10; }
+  .col-12 {
+    grid-column: span 10; } }
+
+@media only screen and (min-width: 1087px) {
+  .col-1 {
+    grid-column: span 1; }
+  .col-2 {
+    grid-column: span 2; }
+  .col-3 {
+    grid-column: span 3; }
+  .col-4 {
+    grid-column: span 4; }
+  .col-5 {
+    grid-column: span 5; }
+  .col-6 {
+    grid-column: span 6; }
+  .col-7 {
+    grid-column: span 7; }
+  .col-8 {
+    grid-column: span 8; }
+  .col-9 {
+    grid-column: span 9; }
+  .col-10 {
+    grid-column: span 10; }
+  .col-11 {
+    grid-column: span 11; }
+  .col-12 {
+    grid-column: span 12; } }
+"
+`;

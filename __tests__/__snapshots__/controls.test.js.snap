@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`-----MIXIINS TEST Mixins snapshot 1`] = `
+exports[`-----CONTROL TEST Control snapshot 1`] = `
 "/*
 FIXME Is this useful? or limits to buttons with colors on Variables?
 */
